@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def home(request):
@@ -8,9 +7,3 @@ def home(request):
     })
 
 
-def contato(request):
-    return render(request, 'me_apague/temp.html')
-
-
-def sobre(request):
-    return HttpResponse('sobre 1')
